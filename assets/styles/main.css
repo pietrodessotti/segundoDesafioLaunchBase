@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap);
+}
+
+body {
+  font-family: Roboto;
+  background-color: #6c4fbb;
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #5939b1;
+}
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header ul li {
+  padding: 30px;
+}
+
+header ul li a {
+  font-size: 1.4em;
+  text-decoration: none;
+  color: white;
+}
+
+header ul li a:hover {
+  color: #b1a9a9;
+}
+
+#InfoRocketseat {
+  text-align: center;
+  color: white;
+}
+
+#InfoRocketseat img {
+  width: 12rem;
+  border-radius: 50%;
+}
+
+#InfoRocketseat h1 {
+  font-size: 2.2em;
+  font-family: Roboto;
+}
+
+#InfoRocketseat p {
+  width: 450px;
+  color: #b1a9a9;
+  font-size: 1.4em;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+#InfoRocketseat ul {
+  font-size: 1.5em;
+  text-align: justify;
+  margin: auto;
+  margin-top: 2rem;
+  width: 300px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 1em;
+  width: 100%;
+  margin: auto;
+}
+
+#footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer ul li {
+  list-style-type: none;
+  border-right: 1px solid gray;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+#footer ul li a:hover {
+  color: #b1a9a9;
+}
+
+#footer:hover {
+  cursor: pointer;
+  color: #b1a9a9;
+}
+/*# sourceMappingURL=main.css.map */

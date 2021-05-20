@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap);
+}
+
+body {
+    font-family: Roboto;
+    background-color: #6c4fbb;
+    font-size: 62.5%;
+}
+
+header {
+    background-color: #5939b1;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        li {
+            padding: 30px;
+
+            a {
+                font-size: 1.4em;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: rgb(177, 169, 169);
+                }
+            }
+        }
+    }
+}
+
+#InfoRocketseat {
+    text-align: center;
+    color: white;
+
+    img {
+        width: 12rem;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 2.2em;
+        font-family: Roboto;
+    }
+
+    p {
+        width: 450px;
+        color: rgb(177, 169, 169);
+        font-size: 1.4em;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    ul {
+        font-size: 1.5em;
+        text-align: justify;
+        margin: auto;
+        margin-top: 2rem;
+        width: 300px;
+    }
+}
+
+#footer {
+    position: fixed;
+    bottom: 1em;
+    width: 100%;
+    margin: auto;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            list-style-type: none;
+            border-right: 1px solid gray;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.5em;
+                padding: 1em;
+
+                &:hover {
+                    color: rgb(177, 169, 169);
+                }
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: rgb(177, 169, 169);
+    }
+}

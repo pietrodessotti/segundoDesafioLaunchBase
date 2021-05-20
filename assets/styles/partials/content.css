@@ -1,0 +1,88 @@
+main h1 {
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+main #contentGrid {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+main #contentGrid .postsGrid {
+  margin: auto;
+  height: 450px;
+  border: 3px solid white;
+  border-radius: 1rem;
+  text-align: center;
+  width: 20rem;
+  padding: 2rem 1rem 1rem;
+  -webkit-transform: background white;
+          transform: background white;
+}
+
+main #contentGrid .postsGrid:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: #7a7979;
+  border: 3px solid #1e133d;
+}
+
+main #contentGrid .postsGrid img {
+  width: 12rem;
+}
+
+main #contentGrid .postsGrid h2 {
+  color: gainsboro;
+  font-weight: normal;
+}
+
+main #contentGrid .postsGrid p {
+  font-size: 10pt;
+  margin-top: 1rem;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modalOverlay iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.modalOverlay .modal {
+  width: 35rem;
+  height: 40rem;
+  background: white;
+  border: 2rem solid #cecece;
+  border-style: outset;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 1rem;
+}
+
+.modalOverlay .modal .closeModal {
+  text-align: end;
+  padding-top: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+/*# sourceMappingURL=content.css.map */

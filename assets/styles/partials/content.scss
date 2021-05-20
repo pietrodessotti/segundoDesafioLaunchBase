@@ -1,0 +1,84 @@
+main {
+    h1 {
+        text-align: center;
+        color: white;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #contentGrid {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .postsGrid {
+            margin: auto;
+            height: 450px;
+            border: 3px solid white;
+            border-radius: 1rem;
+            text-align: center;
+            width: 20rem;
+            padding: 2rem 1rem 1rem;
+            transform: background white;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 1s;
+                background: rgb(122, 121, 121);
+                border: 3px solid #1e133d;
+            }
+
+            img {
+                width: 12rem;
+            }
+
+            h2 {
+                color: rgb(220, 220, 220);
+                font-weight: normal;
+            }
+
+            p {
+                font-size: 10pt;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .modal {
+        width: 35rem;
+        height: 40rem;
+        background: white;
+        border: 2rem solid rgb(206, 206, 206);
+        border-style: outset;
+        margin: auto;
+        margin-top: 5rem;
+        border-radius: 1rem;
+        
+        .closeModal {
+            text-align: end;
+            padding-top: 0.5rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
