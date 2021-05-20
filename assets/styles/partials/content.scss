@@ -58,7 +58,7 @@ main {
         width: 100%;
         height: 500px;
     }
-    
+
     .modal {
         width: 35rem;
         height: 40rem;
@@ -68,13 +68,19 @@ main {
         margin: auto;
         margin-top: 5rem;
         border-radius: 1rem;
-        
-        .closeModal {
+
+        .buttonsModal {
             text-align: end;
             padding-top: 0.5rem;
-            margin-right: 0.5rem;
+            margin-right: 1rem;
             cursor: pointer;
         }
+    }
+
+    .maximize {
+        width: 100vw;
+        height: 95vh;
+        margin: auto;
     }
 }
 

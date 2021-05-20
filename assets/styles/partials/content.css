@@ -74,11 +74,17 @@ main #contentGrid .postsGrid p {
   border-radius: 1rem;
 }
 
-.modalOverlay .modal .closeModal {
+.modalOverlay .modal .buttonsModal {
   text-align: end;
   padding-top: 0.5rem;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   cursor: pointer;
+}
+
+.modalOverlay .maximize {
+  width: 100vw;
+  height: 95vh;
+  margin: auto;
 }
 
 .active {
