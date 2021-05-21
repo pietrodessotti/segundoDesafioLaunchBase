@@ -5,17 +5,9 @@ main h1 {
   margin-bottom: 2rem;
 }
 
-main #contentGrid {
-  width: 100vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
 main #contentGrid .postsGrid {
-  margin: auto;
-  height: 450px;
+  margin: 2rem auto;
+  height: 29rem;
   border: 3px solid white;
   border-radius: 1rem;
   text-align: center;
@@ -23,6 +15,10 @@ main #contentGrid .postsGrid {
   padding: 2rem 1rem 1rem;
   -webkit-transform: background white;
           transform: background white;
+}
+
+main #contentGrid .postsGrid:last-child {
+  margin-bottom: 5rem;
 }
 
 main #contentGrid .postsGrid:hover {
@@ -90,5 +86,17 @@ main #contentGrid .postsGrid p {
 .active {
   opacity: 1;
   visibility: visible;
+}
+
+@media (min-width: 900px) {
+  #contentGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #contentGrid .postsGrid {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=content.css.map */

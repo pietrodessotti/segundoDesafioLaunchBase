@@ -31,7 +31,7 @@ header ul {
 }
 
 header ul li {
-  padding: 30px;
+  padding: 0.4rem;
 }
 
 header ul li a {
@@ -60,7 +60,7 @@ header ul li a:hover {
 }
 
 #InfoRocketseat p {
-  width: 450px;
+  width: 20rem;
   color: #b1a9a9;
   font-size: 1.4em;
   margin: auto;
@@ -72,13 +72,12 @@ header ul li a:hover {
   text-align: justify;
   margin: auto;
   margin-top: 2rem;
-  width: 300px;
+  width: 15rem;
 }
 
 #footer {
-  position: fixed;
   bottom: 1em;
-  width: 100%;
+  width: 100vw;
   margin: auto;
 }
 
@@ -113,5 +112,18 @@ header ul li a:hover {
 #footer:hover {
   cursor: pointer;
   color: #b1a9a9;
+}
+
+@media (min-width: 900px) {
+  header {
+    padding: 20px;
+  }
+  header li {
+    margin: 0 20px;
+  }
+  #footer {
+    position: fixed;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

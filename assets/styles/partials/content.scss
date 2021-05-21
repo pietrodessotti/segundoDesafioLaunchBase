@@ -7,19 +7,19 @@ main {
     }
 
     #contentGrid {
-        width: 100vw;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
         .postsGrid {
-            margin: auto;
-            height: 450px;
+            margin: 2rem auto;
+            height: 29rem;
             border: 3px solid white;
             border-radius: 1rem;
             text-align: center;
             width: 20rem;
             padding: 2rem 1rem 1rem;
             transform: background white;
+
+            &:last-child {
+                margin-bottom: 5rem;
+            }
 
             &:hover {
                 transform: scale(1.1);
@@ -87,4 +87,17 @@ main {
 .active {
     opacity: 1;
     visibility: visible;
+}
+
+@media (min-width: 900px) {
+    #contentGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .postsGrid {
+            height: 100%;
+        }
+
+
+    }
 }

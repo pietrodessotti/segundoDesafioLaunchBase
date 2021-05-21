@@ -24,8 +24,8 @@ header {
         justify-content: center;
 
         li {
-            padding: 30px;
-
+            padding: 0.4rem;
+            
             a {
                 font-size: 1.4em;
                 text-decoration: none;
@@ -54,7 +54,7 @@ header {
     }
 
     p {
-        width: 450px;
+        width: 20rem;
         color: rgb(177, 169, 169);
         font-size: 1.4em;
         margin: auto;
@@ -66,14 +66,13 @@ header {
         text-align: justify;
         margin: auto;
         margin-top: 2rem;
-        width: 300px;
+        width: 15rem;
     }
 }
 
 #footer {
-    position: fixed;
     bottom: 1em;
-    width: 100%;
+    width: 100vw;
     margin: auto;
 
     ul {
@@ -101,5 +100,19 @@ header {
     &:hover {
         cursor: pointer;
         color: rgb(177, 169, 169);
+    }
+}
+
+@media(min-width: 900px) {
+    header {
+        padding: 20px;
+    
+        li {
+            margin: 0 20px;
+        }
+    }
+    #footer {
+        position: fixed;
+        margin: auto;
     }
 }
